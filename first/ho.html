@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Hospital System</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<h1>Smart Emergency Hospital System</h1>
+
+<div class="card">
+    <h2>City Care Hospital</h2>
+    <p>ICU Beds: <span id="icu">2</span></p>
+    <p>Doctors Available: <span id="doctor">1</span></p>
+    <p>Ice Room: <span id="ice">Available</span></p>
+    <p>Blood A+: <span id="blood">3</span> Units</p>
+
+    <button onclick="checkEmergency()">Check Emergency Status</button>
+</div>
+
+<div class="card">
+    <h2>Visitor Check</h2>
+    <input type="number" id="visitorCount" placeholder="Enter visitor count">
+    <button onclick="checkVisitor()">Enter</button>
+    <p id="alarm"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Emergency Hospital</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<h1>🏥 Smart Emergency Hospital System</h1>
+
+<div class="controls">
+    <select id="bloodSelect">
+        <option value="A+">A+</option>
+        <option value="B+">B+</option>
+        <option value="O+">O+</option>
+    </select>
+    <button onclick="checkBlood()">Check Blood</button>
+
+    <input type="number" id="visitorInput" placeholder="Visitor Count">
+    <button onclick="checkVisitor()">Check Visitor</button>
+</div>
+
+<h2>Available Hospitals</h2>
+<div id="hospitalContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
